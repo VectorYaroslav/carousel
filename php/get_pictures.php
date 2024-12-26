@@ -1,14 +1,14 @@
 <?php 
-require __DIR__ . 'pics_folders_array.php';
+require __DIR__ . '/pics_folders_array.php';
 
 if(isset($_GET['get_data'])){
     $pictures_array = [];
     $pictures_dir = "../pics/"; 
     $picsFoldersArray = get_pics_folders_array();
-    
+
     foreach ($picsFoldersArray as $key => $value) {
         $fileinfos = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator($pictures_dir.$picFoldersArray[$key])
+            new RecursiveDirectoryIterator($pictures_dir.$picsFoldersArray[$key])
         );
         foreach($fileinfos as $pathname => $fileinfo) {
             if (!$fileinfo->isFile()) continue;

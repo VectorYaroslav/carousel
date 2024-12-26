@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: o;
+    border: 0;
+}
+html, body .content{
+    min-height: 100%;
+}
+
+
+/***** FOOTER *****/
+.footer{
+    height: 50px;
+    margin: -50px 0 0 0;
+}
+/***** FOOTER(END) *****/
